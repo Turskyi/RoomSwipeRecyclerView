@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         recyclerView.adapter = adapter
         noteViewModel.allNotes.observe(this, Observer<List<NoteEntity>?> {
             /* update RecyclerView */
-            adapter.notes = it
+            adapter.submitList(it)
         })
 
         ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
