@@ -3,6 +3,7 @@ package io.github.turskyi.roomswiperecyclerview.data
 import android.app.Application
 import android.os.AsyncTask
 import androidx.lifecycle.LiveData
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity
 
 class NoteRepository(application: Application) {
     private val noteDao: NoteDao

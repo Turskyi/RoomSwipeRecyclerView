@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RoomSwipeRecyclerView</string>
+    <string name="menu.main.title.delete_all_notes">Delete all notes</string>
+    <string name="add_note.hint.title">Title</string>
+    <string name="add_note.hint.description">Description</string>
+    <string name="add_note.subtitle.priority">Priority:</string>
 </resources>

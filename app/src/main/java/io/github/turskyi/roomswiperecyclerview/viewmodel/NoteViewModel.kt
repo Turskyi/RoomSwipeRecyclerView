@@ -3,7 +3,7 @@ package io.github.turskyi.roomswiperecyclerview.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import io.github.turskyi.roomswiperecyclerview.data.NoteEntity
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity
 import io.github.turskyi.roomswiperecyclerview.data.NoteRepository
 
 class NoteViewModel(application: Application) : AndroidViewModel(application) {

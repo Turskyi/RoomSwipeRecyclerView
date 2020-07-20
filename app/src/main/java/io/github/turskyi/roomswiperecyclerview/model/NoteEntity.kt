@@ -1,9 +1,9 @@
-package io.github.turskyi.roomswiperecyclerview.data
+package io.github.turskyi.roomswiperecyclerview.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import io.github.turskyi.roomswiperecyclerview.data.NoteEntity.Companion.TABLE_NOTES
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity.Companion.TABLE_NOTES
 
 @Entity(tableName = TABLE_NOTES)
 data class NoteEntity(

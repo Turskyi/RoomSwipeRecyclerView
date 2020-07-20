@@ -2,8 +2,9 @@ package io.github.turskyi.roomswiperecyclerview.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import io.github.turskyi.roomswiperecyclerview.data.NoteEntity.Companion.COLUMN_PRIORITY
-import io.github.turskyi.roomswiperecyclerview.data.NoteEntity.Companion.TABLE_NOTES
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity.Companion.COLUMN_PRIORITY
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity.Companion.TABLE_NOTES
 
 @Dao
 interface NoteDao {

@@ -6,6 +6,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
+import io.github.turskyi.roomswiperecyclerview.model.NoteEntity
 
 
 @Database(entities = [NoteEntity::class], version = 1)
@@ -39,9 +40,27 @@ abstract class NoteDatabase : RoomDatabase() {
         AsyncTask<Void?, Void?, Void?>() {
         private val noteDao: NoteDao = db.noteDao()
         override fun doInBackground(vararg voids: Void?): Void? {
-            noteDao.insert(NoteEntity("Title 1", "Description 1", 1))
-            noteDao.insert(NoteEntity("Title 2", "Description 2", 2))
-            noteDao.insert(NoteEntity("Title 3", "Description 3", 3))
+            noteDao.insert(
+                NoteEntity(
+                    "Title 1",
+                    "Description 1",
+                    1
+                )
+            )
+            noteDao.insert(
+                NoteEntity(
+                    "Title 2",
+                    "Description 2",
+                    2
+                )
+            )
+            noteDao.insert(
+                NoteEntity(
+                    "Title 3",
+                    "Description 3",
+                    3
+                )
+            )
             return null
         }
     }
