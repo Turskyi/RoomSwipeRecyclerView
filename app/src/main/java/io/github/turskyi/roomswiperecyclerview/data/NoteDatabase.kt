@@ -8,8 +8,7 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import io.github.turskyi.roomswiperecyclerview.model.NoteEntity
 
-
-@Database(entities = [NoteEntity::class], version = 1)
+@Database(entities = [NoteEntity::class], version = 1, exportSchema = false)
 abstract class NoteDatabase : RoomDatabase() {
     companion object {
         private var instance: NoteDatabase? = null
